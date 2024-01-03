@@ -40,4 +40,4 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Run Biome
-        run: biome ci .
+        run: pnpm check:ci
