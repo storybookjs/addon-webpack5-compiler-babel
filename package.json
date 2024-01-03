@@ -1,0 +1,68 @@
+{
+  "name": "@storybook/addon-webpack5-compiler-babel",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Adds babel as a Webpack5 compiler to Storybook",
+  "keywords": [
+    "storybook-addons",
+    "webpack5",
+    "babel"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/storybookjs/addon-webpack5-compiler-babel"
+  },
+  "scripts": {
+    "build": "tsup",
+    "format": "biome format ./src",
+    "format:write": "pnpm format --write",
+    "check": "biome check --apply ./src",
+    "check:apply": "pnpm check --apply",
+    "check:apply-unsafe": "pnpm check --apply-unsafe"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    },
+    "./preset": {
+      "require": "./dist/preset.cjs",
+      "import": "./dist/preset.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "dist/esm/preset.js",
+  "files": [
+    "dist/**/*",
+    "src/**/*",
+    "README.md"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "storybook": {
+    "displayName": "Addon Webpack5 Compiler Babel",
+    "supportedFrameworks": [
+      "react",
+      "preact",
+      "vue",
+      "web-components",
+      "html",
+      "svelte"
+    ]
+  },
+  "dependencies": {
+    "@storybook/core-common": "next"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.4.1",
+    "@storybook/types": "next",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.89.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
