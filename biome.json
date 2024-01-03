@@ -6,6 +6,9 @@
   "files": {
     "include": ["src/**/*.ts"]
   },
+  "formatter": {
+    "indentStyle": "space"
+  },
   "linter": {
     "enabled": true,
     "rules": {
