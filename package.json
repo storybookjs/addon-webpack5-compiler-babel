@@ -16,7 +16,7 @@
     "build": "tsup",
     "format": "biome format ./src",
     "format:write": "pnpm format --write",
-    "check": "biome check --apply ./src",
+    "check": "biome check ./src",
     "check:apply": "pnpm check --apply",
     "check:apply-unsafe": "pnpm check --apply-unsafe",
     "check:ci": "biome ci ./src",
