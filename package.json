@@ -18,7 +18,9 @@
     "format:write": "pnpm format --write",
     "check": "biome check --apply ./src",
     "check:apply": "pnpm check --apply",
-    "check:apply-unsafe": "pnpm check --apply-unsafe"
+    "check:apply-unsafe": "pnpm check --apply-unsafe",
+    "check:ci": "biome ci ./src",
+    "publish": "auto shipit"
   },
   "exports": {
     ".": {
@@ -58,6 +60,7 @@
   "devDependencies": {
     "@biomejs/biome": "^1.4.1",
     "@storybook/types": "next",
+    "auto": "^11.0.4",
     "tsup": "^8.0.1",
     "typescript": "^5.3.3",
     "webpack": "^5.89.0"
