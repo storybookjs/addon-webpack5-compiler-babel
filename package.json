@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/storybookjs/addon-webpack5-compiler-babel"
+    "url": "git+https://github.com/storybookjs/addon-webpack5-compiler-babel.git"
   },
   "scripts": {
     "build": "tsup",
