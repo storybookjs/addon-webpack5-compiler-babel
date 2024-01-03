@@ -55,7 +55,9 @@
     ]
   },
   "dependencies": {
-    "@storybook/core-common": "next"
+    "@babel/core": "^7.23.7",
+    "@storybook/core-common": "next",
+    "babel-loader": "^9.1.3"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.4.1",
