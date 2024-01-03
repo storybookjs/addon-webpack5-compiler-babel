@@ -20,7 +20,7 @@
     "check:apply": "pnpm check --apply",
     "check:apply-unsafe": "pnpm check --apply-unsafe",
     "check:ci": "biome ci ./src",
-    "publish": "auto shipit"
+    "release": "auto shipit"
   },
   "exports": {
     ".": {
