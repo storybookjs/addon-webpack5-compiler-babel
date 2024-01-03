@@ -1,6 +1,6 @@
 {
   "name": "@storybook/addon-webpack5-compiler-babel",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "description": "Adds babel as a Webpack5 compiler to Storybook",
   "keywords": [
