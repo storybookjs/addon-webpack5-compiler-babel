@@ -33,7 +33,7 @@
     },
     "./package.json": "./package.json"
   },
-  "main": "dist/esm/preset.js",
+  "main": "dist/preset.js",
   "files": [
     "dist/**/*",
     "src/**/*",
