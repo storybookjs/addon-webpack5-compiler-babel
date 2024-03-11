@@ -9,7 +9,7 @@ dependencies:
     specifier: ^7.23.7
     version: 7.23.7
   '@storybook/core-common':
-    specifier: next
+    specifier: ^8.0.0-alpha.1 || ^8.0.0
     version: 8.0.0-alpha.6
   babel-loader:
     specifier: ^9.1.3
@@ -20,7 +20,7 @@ devDependencies:
     specifier: ^1.4.1
     version: 1.4.1
   '@storybook/types':
-    specifier: next
+    specifier: ^8.0.0-alpha.1 || ^8.0.0
     version: 8.0.0-alpha.6
   auto:
     specifier: ^11.1.1
