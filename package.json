@@ -33,6 +33,7 @@
   "main": "dist/index.cjs",
   "files": [
     "dist/**/*",
+    "preset.cjs",
     "src/**/*",
     "README.md"
   ],
