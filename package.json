@@ -1,7 +1,6 @@
 {
   "name": "@storybook/addon-webpack5-compiler-babel",
   "version": "3.0.3",
-  "type": "module",
   "description": "Adds babel as a Webpack5 compiler to Storybook",
   "keywords": [
     "storybook-addons",
@@ -13,7 +12,7 @@
     "url": "git+https://github.com/storybookjs/addon-webpack5-compiler-babel.git"
   },
   "scripts": {
-    "build": "tsup",
+    "build": "tsup --config tsup.config.mts",
     "format": "biome format ./src",
     "format:write": "pnpm format --write",
     "check": "biome check ./src",
@@ -24,13 +23,13 @@
   },
   "exports": {
     ".": {
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.js"
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
     },
-    "./preset": "./dist/preset.cjs",
+    "./preset": "./dist/preset.js",
     "./package.json": "./package.json"
   },
-  "main": "dist/index.cjs",
+  "main": "dist/index.js",
   "files": [
     "dist/**/*",
     "preset.js",
@@ -78,10 +77,11 @@
   },
   "bundler": {
     "exportEntries": [
-      "src/index.ts"
+      "src/index.mts"
     ],
     "nodeEntries": [
-      "src/preset.ts"
+      "src/preset.mts"
     ]
-  }
+  },
+  "packageManager": "pnpm@9.15.0+sha512.76e2379760a4328ec4415815bcd6628dee727af3779aaa4c914e3944156c4299921a89f976381ee107d41f12cfa4b66681ca9c718f0668fa0831ed4c6d8ba56c"
 }
