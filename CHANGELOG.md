@@ -1,3 +1,17 @@
+# v3.0.4 (Mon Dec 30 2024)
+
+#### 🐛 Bug Fix
+
+- fix: Refactor preset export to use ES module syntax [#12](https://github.com/storybookjs/addon-webpack5-compiler-babel/pull/12) ([@valentinpalkovic](https://github.com/valentinpalkovic))
+- bump @storybook dev dependencies to 8.0.6 [#8](https://github.com/storybookjs/addon-webpack5-compiler-babel/pull/8) ([@eric-blue](https://github.com/eric-blue))
+
+#### Authors: 2
+
+- Eric Berndt ([@eric-blue](https://github.com/eric-blue))
+- Valentin Palkovic ([@valentinpalkovic](https://github.com/valentinpalkovic))
+
+---
+
 # v3.0.1 (Mon Mar 11 2024)
 
 #### 🐛 Bug Fix
