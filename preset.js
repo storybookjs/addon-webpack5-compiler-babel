@@ -1,1 +1,2 @@
-module.exports = require('./dist/preset.cjs');
+import preset from "./dist/preset.cjs";
+export default preset;
