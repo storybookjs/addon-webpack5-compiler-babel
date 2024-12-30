@@ -1,3 +1,15 @@
+# v3.0.5 (Mon Dec 30 2024)
+
+#### 🐛 Bug Fix
+
+- fix: Reduce preset.cjs bundle size [#13](https://github.com/storybookjs/addon-webpack5-compiler-babel/pull/13) ([@valentinpalkovic](https://github.com/valentinpalkovic))
+
+#### Authors: 1
+
+- Valentin Palkovic ([@valentinpalkovic](https://github.com/valentinpalkovic))
+
+---
+
 # v3.0.4 (Mon Dec 30 2024)
 
 #### 🐛 Bug Fix
