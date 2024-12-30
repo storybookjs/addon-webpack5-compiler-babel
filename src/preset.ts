@@ -1,9 +1,6 @@
-import {
-  getProjectRoot,
-  resolvePathInStorybookCache,
-} from "@storybook/core-common";
 import type { Options } from "@storybook/types";
 import type { Configuration } from "webpack";
+import { getProjectRoot, resolvePathInStorybookCache } from "./utils.js";
 
 const virtualModuleFiles = [
   /storybook-config-entry\.js$/,
