@@ -1,6 +1,6 @@
 import type { Options } from "@storybook/types";
 import type { Configuration } from "webpack";
-import { getProjectRoot, resolvePathInStorybookCache } from "./utils.js";
+import { resolvePathInStorybookCache } from "./utils.js";
 
 const virtualModuleFiles = [
   /storybook-config-entry\.js$/,
@@ -32,7 +32,6 @@ export const webpackFinal = async (config: Configuration, options: Options) => {
             },
           },
         ],
-        include: [getProjectRoot()],
         exclude: [/node_modules/, ...virtualModuleFiles],
       },
     ],
