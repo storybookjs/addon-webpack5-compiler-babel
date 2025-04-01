@@ -1,3 +1,16 @@
+# v3.0.6 (Tue Apr 01 2025)
+
+#### 🐛 Bug Fix
+
+- Avoid buggy getProjectRoot() [#14](https://github.com/storybookjs/addon-webpack5-compiler-babel/pull/14) ([@ddadamhooper](https://github.com/ddadamhooper) [@valentinpalkovic](https://github.com/valentinpalkovic))
+
+#### Authors: 2
+
+- Adam Hooper ([@ddadamhooper](https://github.com/ddadamhooper))
+- Valentin Palkovic ([@valentinpalkovic](https://github.com/valentinpalkovic))
+
+---
+
 # v3.0.5 (Mon Dec 30 2024)
 
 #### 🐛 Bug Fix
