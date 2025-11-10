@@ -1,18 +1,24 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.4.1/schema.json",
-  "organizeImports": {
-    "enabled": true
-  },
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+
   "files": {
-    "include": ["src/**/*.ts"]
+    "includes": ["src/**/*.ts"]
   },
   "formatter": {
-    "indentStyle": "space"
+    "indentStyle": "space",
+    "lineWidth": 120
   },
   "linter": {
     "enabled": true,
     "rules": {
       "recommended": true
+    }
+  },
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
     }
   }
 }
