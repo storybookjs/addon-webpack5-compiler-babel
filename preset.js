@@ -1,2 +1,1 @@
-import preset from "./dist/preset.cjs";
-export default preset;
+export * from "./dist/preset.js";

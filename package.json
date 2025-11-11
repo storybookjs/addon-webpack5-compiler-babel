@@ -1,7 +1,6 @@
 {
   "name": "@storybook/addon-webpack5-compiler-babel",
   "version": "3.0.6",
-  "type": "module",
   "description": "Adds babel as a Webpack5 compiler to Storybook",
   "keywords": [
     "storybook-addons",
@@ -12,34 +11,62 @@
     "type": "git",
     "url": "git+https://github.com/storybookjs/addon-webpack5-compiler-babel.git"
   },
-  "scripts": {
-    "build": "tsup",
-    "format": "biome format ./src",
-    "format:write": "pnpm format --write",
-    "check": "biome check ./src",
-    "check:apply": "pnpm check --apply",
-    "check:apply-unsafe": "pnpm check --apply-unsafe",
-    "check:ci": "biome ci ./src",
-    "release": "auto shipit"
-  },
+  "license": "MIT",
+  "author": "Storybook Bot <storybookbot@gmail.com>",
+  "type": "module",
   "exports": {
     ".": {
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.js"
+      "default": "./dist/index.js"
     },
-    "./preset": "./dist/preset.cjs",
+    "./preset": "./dist/preset.js",
     "./package.json": "./package.json"
   },
-  "main": "dist/index.cjs",
   "files": [
     "dist/**/*",
     "preset.js",
     "src/**/*",
     "README.md"
   ],
-  "license": "MIT",
+  "scripts": {
+    "build": "tsup",
+    "check": "biome check ./src",
+    "check:apply": "pnpm check --apply",
+    "check:apply-unsafe": "pnpm check --apply-unsafe",
+    "check:ci": "biome ci ./src",
+    "format": "biome format ./src",
+    "format:write": "pnpm format --write",
+    "release": "auto shipit"
+  },
+  "dependencies": {
+    "@babel/core": "^7.26.0",
+    "babel-loader": "^10.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.4",
+    "@types/node": "^22",
+    "auto": "^11.3.0",
+    "find-cache-dir": "^6.0.0",
+    "storybook": "^10.0.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3",
+    "webpack": "^5.97.1"
+  },
+  "packageManager": "pnpm@9.15.0+sha512.76e2379760a4328ec4415815bcd6628dee727af3779aaa4c914e3944156c4299921a89f976381ee107d41f12cfa4b66681ca9c718f0668fa0831ed4c6d8ba56c",
   "publishConfig": {
     "access": "public"
+  },
+  "auto": {
+    "plugins": [
+      "npm"
+    ]
+  },
+  "bundler": {
+    "previewEntries": [
+      "src/index.ts"
+    ],
+    "nodeEntries": [
+      "src/preset.ts"
+    ]
   },
   "storybook": {
     "displayName": "Addon Webpack5 Compiler Babel",
@@ -51,38 +78,5 @@
       "html",
       "svelte"
     ]
-  },
-  "dependencies": {
-    "@babel/core": "^7.26.0",
-    "babel-loader": "^9.2.1"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
-    "@storybook/manager": "8.4.7",
-    "@storybook/preview": "8.4.7",
-    "@storybook/types": "8.4.7",
-    "auto": "^11.3.0",
-    "find-cache-dir": "^5.0.0",
-    "tsup": "^8.3.5",
-    "typescript": "^5.7.2",
-    "webpack": "^5.97.1"
-  },
-  "engines": {
-    "node": ">=18"
-  },
-  "author": "Storybook Bot <storybookbot@gmail.com>",
-  "auto": {
-    "plugins": [
-      "npm"
-    ]
-  },
-  "bundler": {
-    "exportEntries": [
-      "src/index.ts"
-    ],
-    "nodeEntries": [
-      "src/preset.ts"
-    ]
-  },
-  "packageManager": "pnpm@9.15.0+sha512.76e2379760a4328ec4415815bcd6628dee727af3779aaa4c914e3944156c4299921a89f976381ee107d41f12cfa4b66681ca9c718f0668fa0831ed4c6d8ba56c"
+  }
 }
