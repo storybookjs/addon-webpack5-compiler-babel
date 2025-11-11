@@ -32,6 +32,12 @@ export default defineConfig(async () => {
   if (nodeEntries.length) {
     configs.push({
       ...commonConfig,
+      banner: {
+        js: `
+          import { createRequire } from 'node:module';
+          const require = createRequire(import.meta.url);
+        `
+      },
       entry: nodeEntries,
       platform: 'node',
       target: NODE_TARGET,
