@@ -1,3 +1,15 @@
+# v4.0.0 (Tue Nov 11 2025)
+
+#### 💥 Breaking Change
+
+- upgrade to sb10 and esm-only [#16](https://github.com/storybookjs/addon-webpack5-compiler-babel/pull/16) ([@ndelangen](https://github.com/ndelangen))
+
+#### Authors: 1
+
+- Norbert de Langen ([@ndelangen](https://github.com/ndelangen))
+
+---
+
 # v3.0.6 (Tue Apr 01 2025)
 
 #### 🐛 Bug Fix
