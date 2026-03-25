@@ -1,3 +1,15 @@
+# v4.0.1 (Wed Mar 25 2026)
+
+#### 🐛 Bug Fix
+
+- Merge pull request #17 from storybookjs/trusted-publishing [#17](https://github.com/storybookjs/addon-webpack5-compiler-babel/pull/17) ([@Sidnioulz](https://github.com/Sidnioulz))
+
+#### Authors: 1
+
+- Steve Dodier-Lazaro ([@Sidnioulz](https://github.com/Sidnioulz))
+
+---
+
 # v4.0.0 (Tue Nov 11 2025)
 
 #### 💥 Breaking Change
