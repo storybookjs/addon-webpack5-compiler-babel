@@ -1,4 +1,5 @@
-# v4.0.1 (Wed Mar 25 2026)
+# @storybook/addon-webpack5-compiler-babel
+## 4.0.1
 
 #### 🐛 Bug Fix
 
@@ -10,7 +11,7 @@
 
 ---
 
-# v4.0.0 (Tue Nov 11 2025)
+## 4.0.0
 
 #### 💥 Breaking Change
 
@@ -22,7 +23,7 @@
 
 ---
 
-# v3.0.6 (Tue Apr 01 2025)
+## 3.0.6
 
 #### 🐛 Bug Fix
 
@@ -35,7 +36,7 @@
 
 ---
 
-# v3.0.5 (Mon Dec 30 2024)
+## 3.0.5
 
 #### 🐛 Bug Fix
 
@@ -47,7 +48,7 @@
 
 ---
 
-# v3.0.4 (Mon Dec 30 2024)
+## 3.0.4
 
 #### 🐛 Bug Fix
 
@@ -61,7 +62,7 @@
 
 ---
 
-# v3.0.1 (Mon Mar 11 2024)
+## 3.0.1
 
 #### 🐛 Bug Fix
 
